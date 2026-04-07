@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.button1-container {
+  text-align: center;
+  padding: 2rem;
+}
+.button1 {
+  font-size: 2rem;
+  border-radius: 60px;
+  padding: 10px 30px;
+  background: linear-gradient(
+    -45deg,
+    rgba(212, 175, 55, 0.85),
+    rgba(250, 204, 21, 0.85),
+    rgba(212, 175, 55, 0.85),
+    rgba(230, 190, 40, 0.85)
+  );
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+  /* all: 요소의 모든 변경 가능한 속성(색상, 크기, 위치 등)에 적용합니다.
+특정 속성: background-color, opacity, transform 등 특정 이름만 적으면 해당 변화에만 반응합니다. */
+  transition: all  0.2s ease-in-out;
+}
+.button1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+}
+
+
+/* 2. 실제 요소에 적용 */
+.aurora-element {
+  /* 배경 크기 확장: background-size: 200% (또는 그 이상)으로 설정해서, 화면 밖으로 삐져나간 배경이 있어야 움직일 공간이 생깁니다. */
+  background-size: 200% 200%; 
+  animation: auroraFlow 4s ease infinite;
+}
+/* 1. 애니메이션의 움직임(작업지시서) 정의 */
+@keyframes auroraFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
