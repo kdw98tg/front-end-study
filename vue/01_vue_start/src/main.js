@@ -1,4 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App01 from "./01_Start.vue";
+import Bind from "./02_Bind.vue";
+import EventListener from "./03_EventListener.vue";
+import FormBinding from "./04_FormBinding.vue";
+import ConditionalRendering from "./05_ConditionalRendering.vue";
+import ListRendering from "./06_ListRendering.vue";
+import ComputedProperty from "./07_ComputedProperty.vue";
+import LifeCycleAndTemplateRef from "./08_LifeCycleAndTemplateRef.vue";
+import Watchers from "./09_Watchers.vue";
+import Components from "./10_Components.vue";
 
-createApp(App).mount('#app')
+//createApp(App01).mount("#app");
+//createApp(Bind).mount("#app");
+//createApp(EventListener).mount("#app");
+//createApp(FormBinding).mount("#app");
+//createApp(ConditionalRendering).mount("#app");
+//createApp(ListRendering).mount("#app");
+//createApp(ComputedProperty).mount("#app");
+//createApp(LifeCycleAndTemplateRef).mount("#app");
+// createApp(Watchers).mount("#app");
+createApp(Components).mount("#app");
